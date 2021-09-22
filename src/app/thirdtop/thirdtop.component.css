@@ -262,3 +262,16 @@ ul {
  cursor: pointer;
  font-size: 20px;
 }
+.tree .ui-treetable-toggler.fa-caret-right:before{
+  content: "\f055";
+}
+.tree  .ui-treetable-toggler.fa-caret-down:before{
+  content: "\f056";
+}
+::ng-deep .fa-caret-right::before {
+  content: "\f055";
+}
+
+::ng-deep .fa-caret-down::before {
+  content: "\f056";
+}

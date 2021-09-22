@@ -36,9 +36,7 @@
         </span>
            
     </li>  
-        <!-- <div class="col-xs-2 v-divider"  style="margin-left:-1rem"></div>
-        <div class="col-xs-3 v-divider" style="margin-left:20rem"></div>
-         -->
+       
 </ul>
 </p-card>
 
@@ -60,93 +58,17 @@
 
 
             
-<!-- working--------------------
-     <p-accordion>
-    <p-accordionTab  [style]="{ width: '30rem', 'background-color': 'white' ,'font-size':'13px'}" header="1. Requirements Section" [selected]="false">
-        <div class="scrollmenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-    </p-accordionTab>
-    </p-accordion>
-    <p-accordion>
-        <p-accordionTab  [style]="{ width: '30rem', 'background-color': 'white' ,'font-size':'13px'}" header="2. Audits Section" [selected]="false">
-            <div class="scrollmenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        </p-accordionTab>
-        </p-accordion>
-        <p-accordion>
-            <p-accordionTab  [style]="{ width: '30rem', 'background-color': 'white' ,'font-size':'13px'}" header="3. Requirements" [selected]="false">
-                <div class="scrollmenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-            </p-accordionTab>
-            </p-accordion>
-            -->
-            <p-tree layout="vertical" [value]="nodes">
-                <ng-template let-node pTemplate="url">
-                    <a [href]="node.data">{{node.label}}</a>
-                </ng-template>
+
+            <p-tree layout="vertical"  [value]="nodes">
                 <ng-template let-node pTemplate="default">
-                    <b>{{node.label}}</b>
+                    <span class="tree"> {{node.label}}</span> 
                 </ng-template>
+                <!-- <ng-template let-node pTemplate="default">
+                    <b>{{node.label}}</b>
+                </ng-template> -->
             </p-tree>
             
-            <!-- <p-tree [style]="{ width: '30rem', height: '500px' }" [value]="files1"></p-tree>
-            <p-tree [value]="files2"></p-tree> -->
-
-       
-
-    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->
-
-    <!-- <p-fieldset
-    [style]="{ width: '30rem', 'background-color': 'none' ,'font-size':'5px'}"
-    legend="1. Requirements Section"
-    [toggleable]="true"
-  >
-    <div class="scrollmenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-</p-fieldset>
-   -->
-
-            
-
-
-
-                <!-- <div class="p-col-12 p-md-4">
-                    <p-scrollPanel styleClass="custombar2">
-                      <div >
-
-
-                            
-
-        <p-button [icon]="activeState[0] ? 'pi pi-minus' : 'pi pi-plus'" (click)="toggle(0)" styleClass="p-button-text" label="Toggle 1st"></p-button>
-
-<p-accordion>
-    <p-accordionTab header="Requirement Section" style="background-color: white;" [(selected)]="activeState[0]">
-        <p style="font-size: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </p-accordionTab>
-</p-accordion>
-
-
-
-
-
-
-                            
-
-
-                      </div>
-                    </p-scrollPanel>
-                  </div> -->
-
-
+           
         </div>
     </ng-template>
     
@@ -163,42 +85,14 @@
 
                             
                             
-                                <!--<ul style="background-color:#E1E6E1">
-                                    <li style="float: left;">
-                                    <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </li>
-                                    <li style="font-size: 13px; margin-right: 20rem;">
-                                        SECTION 
-                                    </li>
-                                    <li>
-                                        <img src="/assets/Background Copy 3.png" alt="image" width="1.5" height="15">&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </li>
-                                    
-                                    <li style="font-size: 13px;margin-right: 25rem;">
-                                        CATEGORY 
-                                    </li>
-                                    <li>
-                                        <img src="/assets/Background Copy 3.png" alt="image" width="1.5" height="15">&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </li>
-                                    <li style="font-size: 13px; margin-right: 25rem;">
-                                        SUMMARY 
-                                    </li>
-                                    
-                                    <li style="font-size: 13px; ">
-                                        <img src="/assets/Background Copy 3.png" alt="image" width="1.5" height="15">&nbsp;&nbsp;&nbsp;
-                                       REFERENCE MODE
-                                    </li>
-                                   
+                                
 
 
                                     
                                      
                                     
-                                </ul>
-
-                                
-                            </p-card>
-                             -->
+                            
+                             
                              
 
                            <table style="overflow:auto;height: 617px;margin-left:0rem;margin-top:-0rem;margin-right:-1rem;margin:auto;width:125rem;"  mat-table [dataSource]="dataSource" class="mat-elevation-z8">
