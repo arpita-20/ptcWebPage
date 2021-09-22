@@ -1,0 +1,93 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+  }
+  
+   li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  } 
+  circle1{
+    position: absolute;
+    left: 25.19%;
+    right: 74.3%;
+    top: 39.29%;
+    bottom: 54.46%;
+    
+    background: #22A5F7;
+  }
+  i1{
+    position: absolute;
+    left: 25.21%;
+    right: 74.32%;
+    top: 48.45%;
+    bottom: 28.15%;
+    
+    background: #22A5F7;
+  }
+path1{
+position: absolute;
+left: 23.9%;
+right: 72.99%;
+top: 25%;
+bottom: 17.86%;
+
+background: #22A5F7;
+border: 1px solid #000000;
+    }
+    path2{
+        position: absolute;
+left: 23.38%;
+right: 72.47%;
+top: 17.86%;
+bottom: 10.71%;
+
+background: #22A5F7;
+    }
+    .button
+    {
+        background-color: #6DC149;
+        border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px 2px;
+  width:67px;
+ 
+  cursor: pointer;
+ 
+    }
+    .vr
+    {
+        position: absolute;
+ left: 11%;
+/*right: 66.75%; */
+
+
+
+background: #ACBBAC;
+mix-blend-mode: normal;
+opacity: 0.5;
+transform: rotate(90deg);
+    }

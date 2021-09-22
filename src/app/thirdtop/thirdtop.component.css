@@ -1,0 +1,264 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+  }
+  
+   li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  } 
+  .height {
+    height: 100vh
+}
+
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+}
+
+.search input {
+    height: 60px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4
+}
+
+.search input:focus {
+    box-shadow: none;
+    border: 2px solid blue
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 16px
+}
+
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
+    background: blue
+}
+.vl {
+    border-left: 2px solid black;
+    height: 500px;
+  }
+  .container {
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: row;
+  }
+  
+  .div1 {
+    position: relative;
+    width:20vw;
+    height:20vh;
+    background: lightblue;
+    flex-grow:0;
+  }
+  
+  .div2 {
+    position: relative;
+    width:20vw;
+    height:20vh;
+    background: green;
+    flex-grow:0;
+  }
+  
+  .div3 {
+    position: relative;
+    width:20vw;
+    height:20vh;
+    background: pink;
+    flex-grow:0;
+  }
+  div.scrollmenu {
+    width: 30rem;
+    overflow: auto;
+    white-space: nowrap;
+    font-size: 10px;
+  }
+  .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
+:host ::ng-deep  .p-frozen-column {
+    font-weight: bold;
+  }
+  :host ::ng-deep .p-datatable-frozen-tbody {
+    font-weight: bold;
+  }
+  table {
+    width: 100%;
+  }
+  ::ng-deep .fa-caret-right::before {
+    content: "\F067";
+  }
+  
+  ::ng-deep .fa-caret-down::before {
+    content: "\F068";
+  }
+  .th1
+  {
+    font-size: 13px; margin-right: 20rem;background-color:#E1E6E1;color:#4E5858;
+    
+
+  }
+  .th2
+  {
+    font-size: 13px;background-color:#E1E6E1;color:#4E5858;
+    
+
+  }
+  .v-divider{
+    margin-left:5px;
+    margin-right:5px;
+    width:1px;
+    height:6rem;
+    border-left:1px solid gray;
+   }
+ 
+       .inputContainer i {
+  position: absolute;
+}
+.inputContainer {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.icon {
+  padding: 15px;
+  color: rgb(49, 0, 128);
+  width: 70px;
+  text-align: left;
+}
+.Field {
+  width: 100%;
+   height: 100%;
+  text-align: center;
+  font-size: 2 0px;
+  font-weight: 500;
+}
+.sb-example-1 .search {
+ width: 30%;
+ position: relative;
+ display: flex;
+}
+.sb-example-1 .searchTerm {
+ width: 100%;
+ border: 3px solid #00B4CC;
+ border-right: none;
+ padding: 5px;
+ border-radius: 5px 0 0 5px;
+ outline: none;
+ color: #9DBFAF;
+}
+.sb-example-1 .searchTerm:focus{
+ color: #00B4CC;
+}
+.sb-example-1 .searchButton {
+ width: 40px;
+ height: 50px;
+ border: 1px solid #00B4CC;
+ background: #00B4CC;
+ text-align: center;
+ color: #fff;
+ border-radius: 0 5px 5px 0;
+ cursor: pointer;
+ font-size: 20px;
+}
